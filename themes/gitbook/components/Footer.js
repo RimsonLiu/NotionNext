@@ -20,7 +20,8 @@ const Footer = ({ siteInfo }) => {
             <div className='flex justify-center'>
                 <div>
                   <i className='mx-1 animate-pulse fas fa-heart' /> 
-                  <a href={BLOG.LINK} className='underline font-bold text-gray-500 dark:text-gray-300 '>{BLOG.AUTHOR}  </a> 
+                  {/* <a href={BLOG.LINK} className='underline font-bold text-gray-500 dark:text-gray-300 '>{BLOG.AUTHOR}</a>  */}
+                  {BLOG.AUTHOR}
                   <br/>
                 </div>
                 © {`${copyrightDate}`}
