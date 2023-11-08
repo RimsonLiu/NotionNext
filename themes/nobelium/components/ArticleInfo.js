@@ -18,7 +18,7 @@ export const ArticleInfo = (props) => {
 
             {post?.type !== 'Page' && <>
             <nav className="flex mt-7 items-start text-gray-500 dark:text-gray-400">
-            <div className="flex mb-4">
+            {/* <div className="flex mb-4">
               <a href={BLOG.CONTACT_GITHUB || '#'} className="flex">
                 <Image
                   alt={BLOG.author}
@@ -30,7 +30,7 @@ export const ArticleInfo = (props) => {
                 <p className="ml-2 md:block">{BLOG.author}</p>
               </a>
               <span className="block">&nbsp;/&nbsp;</span>
-            </div>
+            </div> */}
             <div className="mr-2 mb-4 md:ml-0">
               {post?.publishDay}
             </div>
