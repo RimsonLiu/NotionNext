@@ -21,10 +21,8 @@ const Footer = ({ siteInfo }) => {
                 <div>
                   <i className='mx-1 animate-pulse fas fa-heart' /> 
                   {/* <a href={BLOG.LINK} className='underline font-bold text-gray-500 dark:text-gray-300 '>{BLOG.AUTHOR}</a>  */}
-                  {BLOG.AUTHOR}
-                  <br/>
+                  {BLOG.AUTHOR} © {`${copyrightDate}`}
                 </div>
-                © {`${copyrightDate}`}
             </div>
 
             {/* <div className='text-xs font-serif'>Powered By <a href='https://github.com/tangly1024/NotionNext' className='underline text-gray-500 dark:text-gray-300'>NotionNext</a></div> */}
