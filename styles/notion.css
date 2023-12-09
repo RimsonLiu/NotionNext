@@ -69,7 +69,7 @@
 
 .notion {
   font-size: 16px;
-  line-height: 1.6 !important;
+  line-height: 1.6rem !important;
   color: var(--fg-color);
   caret-color: var(--fg-color);
   font-family: inherit;
