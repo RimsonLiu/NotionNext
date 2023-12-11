@@ -384,7 +384,7 @@ const BLOG = {
   // RSS订阅
   ENABLE_RSS: process.env.NEXT_PUBLIC_ENABLE_RSS || true, // 是否开启RSS订阅功能
   MAILCHIMP_LIST_ID: process.env.MAILCHIMP_LIST_ID || acfbabc15b, // 开启mailichimp邮件订阅 客户列表ID ，具体使用方法参阅文档
-  MAILCHIMP_API_KEY: process.env.MAILCHIMP_API_KEY || 5ed238dbf727f888ef8255211e1fb067-us8, // 开启mailichimp邮件订阅 APIkey
+//   MAILCHIMP_API_KEY: process.env.MAILCHIMP_API_KEY || 5ed238dbf727f888ef8255211e1fb067-us8, // 开启mailichimp邮件订阅 APIkey
 
   // 作废配置
   AVATAR: process.env.NEXT_PUBLIC_AVATAR || '/avatar.svg', // 作者头像，被notion中的ICON覆盖。若无ICON则取public目录下的avatar.png
