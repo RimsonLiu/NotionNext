@@ -1665,10 +1665,10 @@ code[class*='language-'] {
   overflow-wrap: break-word;
 }
 .notion,
-/* .notion-text, */
+.notion-text,
 .notion-quote,
 .notion-h-title {
-  @apply leading-8;
+  /* @apply leading-8; */
   @apply p-0;
   @apply my-3;
 }
