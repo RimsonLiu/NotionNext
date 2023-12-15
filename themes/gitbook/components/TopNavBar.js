@@ -52,7 +52,7 @@ export default function TopNavBar(props) {
             <div className='flex w-full h-14 shadow glassmorphism bg-white dark:bg-hexo-black-gray px-7 items-between'>
 
                 {/* 左侧图标Logo */}
-                <LogoBar {...props} />
+                {/* <LogoBar {...props} /> */}
 
                 {/* 折叠按钮、仅移动端显示 */}
                 <div className='mr-1 flex md:hidden justify-end items-center space-x-4 font-serif dark:text-gray-200'>
