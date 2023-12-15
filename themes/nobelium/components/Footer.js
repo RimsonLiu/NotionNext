@@ -18,11 +18,11 @@ export const Footer = (props) => {
      <DarkModeButton className='text-center py-4'/>
      <hr className="border-gray-200 dark:border-gray-600" />
      <div className="my-4 text-sm leading-6">
-       <div className="flex align-baseline justify-between flex-wrap">
+       <div className="flex align-baseline justify-center flex-wrap">
          <p>
            © {siteConfig('AUTHOR')} {copyrightDate}
          </p>
-         <Vercel />
+         {/* <Vercel /> */}
        </div>
      </div>
    </footer>
