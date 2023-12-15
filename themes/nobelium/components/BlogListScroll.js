@@ -57,10 +57,11 @@ export const BlogListScroll = props => {
                       </h2>
 
                       <div className="mb-4 text-sm text-gray-700">
-                          by <a href="#" className="text-gray-700">{siteConfig('AUTHOR')}</a> on {p.date?.start_date || p.createdTime}
-                          <span className="font-bold mx-1"> | </span>
-                          <a href="#" className="text-gray-700">{p.category}</a>
-                          <span className="font-bold mx-1"> | </span>
+                          {/* by <a href="#" className="text-gray-700">{siteConfig('AUTHOR')}</a>  */}
+                          {p.date?.start_date || p.createdTime}
+                          {/* <span className="font-bold mx-1"> | </span> */}
+                          {/* <a href="#" className="text-gray-700">{p.category}</a> */}
+                          {/* <span className="font-bold mx-1"> | </span> */}
                           {/* <a href="#" className="text-gray-700">2 Comments</a> */}
                       </div>
 
