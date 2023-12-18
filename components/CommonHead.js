@@ -8,7 +8,7 @@ const CommonHead = ({ meta, children }) => {
     url = `${url}/${meta.slug}`
     image = meta.image || '/bg_image.jpg'
   }
-  const title = meta?.title || siteConfig('TITLE')
+  const title = siteConfig('TITLE')
   const description = meta?.description || siteConfig('DESCRIPTION')
   const type = meta?.type || 'website'
   const keywords = meta?.tags || siteConfig('KEYWORDS')

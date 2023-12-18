@@ -48,7 +48,7 @@ export const BlogListScroll = props => {
       <div id="posts-wrapper" className="w-full md:pr-12 mb-12" ref={targetRef}>
               {postsToShow.map(p => (
                   <article key={p.id} className="mb-12" >
-                      <h2 className="mb-4">
+                      <h2 className="mb-4 font-weight=bold">
                           <Link
                               href={`/${p.slug}`}
                               className="text-black text-xl md:text-2xl no-underline hover:underline">
