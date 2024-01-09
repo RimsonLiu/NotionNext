@@ -15,7 +15,7 @@ export const MenuItemDrop = ({ link }) => {
         <div className='cursor-pointer ' onMouseOver={() => changeShow(true)} onMouseOut={() => changeShow(false)}>
             {!hasSubMenu &&
                 <div className="block text-black dark:text-gray-50 nav" >
-                    <Link href={link?.to} target={link?.to?.indexOf('http') === 0 ? '_blank' : '_self'} >
+                    <Link href={link?.to} target={link?.target? link?.target : '_self'} >
                         {link?.icon && <i className={link?.icon} />} {link?.name}
                     </Link>
                 </div>
