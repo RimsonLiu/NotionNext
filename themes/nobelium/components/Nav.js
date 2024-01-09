@@ -87,8 +87,8 @@ const NavBar = props => {
     { icon: 'fas fa-search', name: locale.NAV.SEARCH, to: '/search', show: siteConfig('NOBELIUM_MENU_SEARCH', null, CONFIG) },
     { icon: 'fas fa-archive', name: locale.NAV.ARCHIVE, to: '/archive', show: siteConfig('NOBELIUM_MENU_ARCHIVE', null, CONFIG) },
     { icon: 'fas fa-folder', name: locale.COMMON.CATEGORY, to: '/category', show: siteConfig('NOBELIUM_MENU_CATEGORY', null, CONFIG) },
-    { icon: 'fas fa-tag', name: locale.COMMON.TAGS, to: '/tag', show: siteConfig('NOBELIUM_MENU_TAG', null, CONFIG) }
-    // { icon: 'fas fa-rss', name: 'RSS', to: '/rss/feed.xml', show: siteConfig('NOBELIUM_MENU_RSS', null, CONFIG) }
+    { icon: 'fas fa-tag', name: locale.COMMON.TAGS, to: '/tag', show: siteConfig('NOBELIUM_MENU_TAG', null, CONFIG) },
+    { id:2, icon: 'fas fa-rss', name: 'RSS', to: '/rss/feed.xml', show: siteConfig('NOBELIUM_MENU_RSS', null, CONFIG), target:'_blank' }
   ]
   if (customNav) {
     links = links.concat(customNav)
