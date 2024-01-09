@@ -113,7 +113,7 @@ const NavBar = props => {
                     </div>
                 </Collapse>
             </div>
-
+            
             {JSON.parse(siteConfig('NOBELIUM_MENU_RANDOM_POST', null, CONFIG)) && <RandomPostButton {...props} />}
             {JSON.parse(siteConfig('NOBELIUM_MENU_SEARCH_BUTTON', null, CONFIG)) && <SearchButton {...props}/>}
             <i onClick={toggleOpen} className='fas fa-bars cursor-pointer px-5 flex justify-center items-center md:hidden'></i>
