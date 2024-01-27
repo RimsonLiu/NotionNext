@@ -2062,3 +2062,8 @@ code.language-mermaid {
 figure.notion-asset-wrapper.notion-asset-wrapper-video>div {
     height: 100% !important;
 }
+
+
+h2 {
+  font-weight: bold;
+}
