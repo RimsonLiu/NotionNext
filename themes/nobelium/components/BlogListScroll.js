@@ -64,12 +64,12 @@ export const BlogListScroll = props => {
           <h2 className='mb-4'>
             <Link
               href={`/${p.slug}`}
-              className='text-black text-xl md:text-2xl no-underline hover:underline'>
+              className='text-black dark:text-white text-xl md:text-2xl no-underline hover:underline'>
               {p.title}
             </Link>
           </h2>
 
-          <div className='mb-4 text-sm text-gray-700'>
+          <div className='mb-4 text-sm text-gray-700 dark:text-gray-300'>
             {/* by{' '}
             <a href='#' className='text-gray-700'>
               {siteConfig('AUTHOR')}
@@ -83,7 +83,7 @@ export const BlogListScroll = props => {
             {/* <a href="#" className="text-gray-700">2 Comments</a> */}
           </div>
 
-          <p className='text-gray-700 leading-normal'>{p.summary}</p>
+          <p className='text-gray-700 dark:text-gray-300 leading-normal'>{p.summary}</p>
         </article>
       ))}
 
