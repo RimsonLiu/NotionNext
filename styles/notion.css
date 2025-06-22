@@ -2083,7 +2083,11 @@ figure.notion-asset-wrapper.notion-asset-wrapper-video > div {
   width: 100% !important;
 }
 
-
 h2 {
   font-weight: bold;
+}
+
+/* 画廊左右边线不展示Bug */
+.notion-gallery {
+  padding: 0 16px;
 }
