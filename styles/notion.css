@@ -69,9 +69,12 @@
 
 .notion {
   font-size: 16px;
-  line-height: 1.6rem;
-  color: var(--fg-color);
-  caret-color: var(--fg-color);
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: normal;
+  -webkit-font-smoothing: auto;
+  color: #37352f;
+  caret-color: #37352f;
   font-family: inherit !important;
 }
 
@@ -548,7 +551,7 @@ summary > .notion-h {
   border-left: 3px solid currentcolor;
   padding: 0.2em 0.9em;
   margin: 6px 0;
-  font-size: 1.2em;
+  font-size: 0.95em;
 }
 
 .notion-hr {
@@ -1971,7 +1974,7 @@ svg + .notion-page-title-text {
 /* https://github.com/kchen0x */
 .notion-quote {
   display: block;
-  border-radius: 5px;
+  border-radius: 0;
   border-color: var(--notion-blue);
   border-left-color: var(--notion-blue);
   background-color: var(--notion-blue_background_co);
@@ -1981,7 +1984,7 @@ svg + .notion-page-title-text {
   border-left: 10px solid;
   padding: 0.2em 0.9em;
   margin: 6px 0;
-  font-size: 1em;
+  font-size: 0.95em;
   /* color: var(--notion-gray); */
 }
 
@@ -2090,4 +2093,9 @@ h2 {
 /* 画廊左右边线不展示Bug */
 .notion-gallery {
   padding: 0 16px;
+}
+
+/* 强制覆盖引用块字体大小 */
+blockquote.notion-quote {
+  font-size: 1em !important;
 }

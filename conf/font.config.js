@@ -22,22 +22,22 @@ module.exports = {
   // 无衬线字体 例如'"LXGW WenKai"'
   FONT_SANS: [
     // '"LXGW WenKai"',
-    '"PingFang SC"',
     '-apple-system',
     'BlinkMacSystemFont',
-    '"Hiragino Sans GB"',
-    '"Microsoft YaHei"',
+    '"Segoe UI"',
+    'Helvetica',
+    '"Apple Color Emoji"',
+    'Arial',
+    'sans-serif',
     '"Segoe UI Emoji"',
     '"Segoe UI Symbol"',
-    '"Segoe UI"',
+    '"PingFang SC"',
+    '"Hiragino Sans GB"',
+    '"Microsoft YaHei"',
     '"Noto Sans SC"',
     'HarmonyOS_Regular',
     '"Helvetica Neue"',
-    'Helvetica',
-    '"Source Han Sans SC"',
-    'Arial',
-    'sans-serif',
-    '"Apple Color Emoji"'
+    '"Source Han Sans SC"'
   ],
   // 衬线字体 例如'"LXGW WenKai"'
   FONT_SERIF: [

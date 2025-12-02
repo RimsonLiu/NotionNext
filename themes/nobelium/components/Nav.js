@@ -52,8 +52,8 @@ const Nav = props => {
         id='sticky-nav'
         ref={navRef}>
         <div className='flex items-center'>
-          <SmartLink href='/' aria-label={siteConfig('TITLE')}>
-            <div className='h-6 w-6'>
+          <SmartLink href='/' aria-label={siteConfig('TITLE')} className='flex items-center'>
+            <div className='h-6 w-6 flex items-center justify-center'>
               {/* <SvgIcon/> */}
               {siteConfig('NOBELIUM_NAV_NOTION_ICON') ? (
                 <LazyImage
@@ -66,17 +66,10 @@ const Nav = props => {
                 <SvgIcon />
               )}
             </div>
+            <p className='logo ml-2 font-medium text-gray-800 dark:text-gray-300 header-name whitespace-nowrap leading-6'>
+              {siteConfig('TITLE')}
+            </p>
           </SmartLink>
-          {post ? (
-            <p className='ml-2 max-h-12 line-clamp-2 overflow-ellipsis font-medium text-gray-800 dark:text-gray-300 header-name'>
-              {post?.title}
-            </p>
-          ) : (
-            <p className='logo line-clamp-1 overflow-ellipsis ml-2 font-medium text-gray-800 dark:text-gray-300 header-name whitespace-nowrap'>
-              <SmartLink href='/' aria-label={siteConfig('TITLE')}> {siteConfig('TITLE')} </SmartLink>
-              {/* ,{' '}<span className="font-normal">{siteConfig('DESCRIPTION')}</span> */}
-            </p>
-          )}
         </div>
         <NavBar {...props} />
       </div>
