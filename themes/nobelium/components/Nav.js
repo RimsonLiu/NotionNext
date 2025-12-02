@@ -3,7 +3,7 @@ import DarkModeButton from '@/components/DarkModeButton'
 import LazyImage from '@/components/LazyImage'
 import { siteConfig } from '@/lib/config'
 import { useGlobal } from '@/lib/global'
-import Link from 'next/link'
+import SmartLink from '@/components/SmartLink'
 import { useEffect, useRef, useState } from 'react'
 import CONFIG from '../config'
 import { MenuItemCollapse } from './MenuItemCollapse'
@@ -52,8 +52,8 @@ const Nav = props => {
         id='sticky-nav'
         ref={navRef}>
         <div className='flex items-center'>
-          <Link href='/' aria-label={siteConfig('TITLE')}>
-            <div className='flex items-center'>
+          <SmartLink href='/' aria-label={siteConfig('TITLE')}>
+            <div className='h-6 w-6'>
               {/* <SvgIcon/> */}
               {siteConfig('NOBELIUM_NAV_NOTION_ICON') ? (
                 <LazyImage
@@ -66,10 +66,14 @@ const Nav = props => {
                 <SvgIcon />
               )}
             </div>
-          </Link>
-          {(
+          </SmartLink>
+          {post ? (
+            <p className='ml-2 max-h-12 line-clamp-2 overflow-ellipsis font-medium text-gray-800 dark:text-gray-300 header-name'>
+              {post?.title}
+            </p>
+          ) : (
             <p className='logo line-clamp-1 overflow-ellipsis ml-2 font-medium text-gray-800 dark:text-gray-300 header-name whitespace-nowrap'>
-              <Link href='/' aria-label={siteConfig('TITLE')}> {siteConfig('TITLE')} </Link>
+              <SmartLink href='/' aria-label={siteConfig('TITLE')}> {siteConfig('TITLE')} </SmartLink>
               {/* ,{' '}<span className="font-normal">{siteConfig('DESCRIPTION')}</span> */}
             </p>
           )}
